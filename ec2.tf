@@ -14,7 +14,7 @@ provider "aws" {
   region  = "us-east-1"
 }
 
-#Resource Block
+#Resource Block-developed by second develeoper 
 resource "aws_instance" "ec2testserver" {
   ami           = "ami-041db4a969fe3eb68" 
   instance_type = "t2.micro"
