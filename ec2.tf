@@ -30,7 +30,7 @@ module "vpc" {
   # VPC Basic Details
   name = "vpc-dev"
   cidr = "10.0.0.0/16"   
-  azs                 = ["ap-south-1a"]
+  azs                 = ["ap-south-1b"]
   private_subnets     = ["10.0.1.0/24"]
   public_subnets      = ["10.0.101.0/24"]
 
