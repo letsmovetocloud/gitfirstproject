@@ -17,7 +17,7 @@ provider "aws" {
 #Resource Block-developed by second develeoper 
 resource "aws_instance" "ec2testserver" {
   ami           = "ami-041db4a969fe3eb68" 
-  instance_type = "t3.micro"
+  instance_type = "t2.medium"
 
 }
 
@@ -29,9 +29,12 @@ module "vpc" {
 
   # VPC Basic Details
   name = "vpc-dev"
+
   cidr = "192.168.0.0.16"   
   azs                 = ["ap-south-1a"]
   private_subnets     = ["192.168.2.0/24"]
   public_subnets      = ["192.168.1.0/24"]
+
+
 
 #new comment added 
